@@ -1,5 +1,5 @@
 let date = new Date();
-let year = date.getFull year();
+let year = date.getFullyear();
 
 document.querySelector('h1').innerHTML='&copy;' + year;
 
