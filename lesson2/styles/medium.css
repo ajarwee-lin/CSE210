@@ -1,0 +1,19 @@
+@media only screen and (min-width: 560px){
+    
+    
+    .first {
+        float: left;
+        width: 46%;
+    
+        
+    }
+    .second{
+        float: right;
+        width: 46%;
+    }
+
+    .third, footer{
+        clear:both;
+    }
+}
+   
