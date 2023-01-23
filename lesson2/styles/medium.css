@@ -1,17 +1,28 @@
 @media only screen and (min-width: 560px){
     
-    
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
     .first {
-        float: left;
+        /* float: left;
         width: 46%;
-    
+     */
+        grid-column: 1/2;
+        grid-row: 1/2;
         
     }
     .second{
-        float: right;
-        width: 46%;
+        /* float: right;
+        width: 46%; */
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }   
+    
+    .third {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        
     }
-
     .third, footer{
         clear:both;
     }

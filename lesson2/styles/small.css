@@ -3,14 +3,17 @@ body {
     font-family: 'Merriweather', serif;
     text-align: center;
     font-weight: normal;
-    
-    
   }
 
   header {
     background-color: skyblue ;
     padding: 5px;
     
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
  
