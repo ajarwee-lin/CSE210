@@ -2,6 +2,24 @@
     background-color: red;
 }
 
-.btn {
-    background-color: blue;
+
+/* hamburger menu / responsive menu */
+
+a {
+    display: none;
+
 }
+a:first-child {
+    display: block;
+    text-decoration: none;
+    font-size: 2em;
+}  
+
+@media screen and (min-width: 650px){
+    a:first-child {
+        display: none;
+    }
+    a {
+        display: block;
+    }
+    
