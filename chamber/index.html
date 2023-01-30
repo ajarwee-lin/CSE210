@@ -1,12 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber of Commerce</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="WDD 230 Chamber of Commerce Site - Homepage">
+<title>Chambers of Moria Homepage</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&family=Open+Sans&family=PT+Serif&display=swap"
+rel="stylesheet">
+<link rel="shortcut icon" href="images/fav.ico">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/small.css">
+<link rel="stylesheet" href="css/medium.css">
+<link rel="stylesheet" href="css/large.css">
 </head>
+
 <body>
-    
+
+<header>
+<figure class="headerLogo">
+<a href="#"><img class="headerLogoAct" src="images/chambersLogo_small.webp"
+alt="Chambers of Moria Logo"></a>
+</figure>
+<a href="#">
+<div class="headerTitles">
+<h2 class="headerTitle">Moria</h2>
+<h3 class="headerSubtitle">Chambers of Commerce</h3>
+</div>
+</a>
+<nav>
+<ul id="navLink">
+<li><a href="discover/">Discover</a></li>
+<li><a href="directory/">Directory</a></li>
+<li><a href="join/">Join</a></li>
+<li><a href="contact/">Contact</a></li>
+</ul>
+</nav>
+<div class="spacer1"></div>
+<figure class="headerIcon">
+<a href="https://facebook.com/"><img class="linkedIcon" src="images/facebook_icon.webp" alt="Facebook" width="25"
+height="25"></a>
+</figure>
+<figure class="headerIcon sideIcon">
+<a href="https://www.linkedin.com/"><img class="linkedIcon" src="images/linkedin_icon.webp" alt="Linkedin" width="25"
+height="25"></a>
+</figure>
+<div class="spacer2"></div>
+<button id="collapsingBtn" class="collapsingBtn"><span>&#9776;</span><span>X</span></button>
+<p class="headerDate"><span id="todayDate"></span></p>
+<div class="banner">
+<h2 class="bannerText">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</h2>
+</div>
+</header>
+
+<main class="mainGrid">
+<div class="mainSections heroSection">
+<div class="heroImageWrapper">
+<img class="heroImage"
+srcset="images/misty_mountains_450x.webp 450w,
+images/misty_mountains_700x.webp 700w, images/misty_mountains_1000x.webp 1000w, images/misty_mountains_1350x.webp 1350w"
+sizes="(max-width: 1120px) 100vw, 50vw" src="images/misty_mountains_1000x.webp"
+alt="The Misty Mountains">
+</div>
+<h1 class="heroText">Welcome to Moria</h1>
+<form class="heroButtonWrapper" action="join/">
+<button type="submit" value="Go to Join" class="heroButton"><strong>Join the Chamber</strong></button>
+</form>
+</div>
+
+<div class="mainSections eventSection">
+<h2 class="eventSectionText">Ruby Mining</h2>
+<h3 class="eventSectionText">The Dwarven Association</h3>
+<p class="eventSectionText">Bring pick in hand to experience a taste of the glory of mining, Friday at 8:00
+a.m. <span class="eventSubText">more info...</span></p>
+</div>
+
+<div class="mainSections weatherSection">
+<h2 class="weatherSectionText weatherTitle">Weather</h2>
+<div class="weatherImageWrapper">
+<img id="weatherImg" class="weatherImage" src="images/part_cloudy.webp" alt="Partly Cloudy Icon"
+width="100" height="100">
+</div>
+<h3 class="weatherSectionText tempText"><span id="tempF">50</span>&#176;F</h3>
+<p id="weatherDescription" class="weatherSectionText weatherText"> Partly Cloudy</p>
+<hr class="weatherLine">
+<p class="weatherSectionText windSpeedText">Wind Speed: </p>
+<p class="weatherSectionText windSpeedValue"><span id="windSpeed">3.5</span> mph</p>
+<p class="weatherSectionText windChillText">Wind Chill: </p>
+<p class="weatherSectionText windChillValue"><span id="windChill">N/A</span></p>
+</div>
+
+<div class="mainSections newsSection">
+<h2 class="newsSectionText newsTitle">News Release</h2>
+<p class="newsSectionText newsText">Breaking News: Two Hobbit-like individuals were said to have been seen walking through
+the Mines of Moriah last Tuesday. They were carrying a golden ring they claimed was "The One Ring of Power," and they were on their way to
+"Destroy the ring forever." For more information on these two, please visit MiddleEarthNews for the full report.
+</p>
+</div>
+
+<div class="mainSections joinSection">
+<form class="joinButtonWrapper" action="join/">
+<button class="joinUsButton" type="submit" value="Go to Join"><strong>Join Us</strong></button>
+</form>
+<p class="joinSectionText">Discover how to join the chamber of commerce and how it will
+benefit your organization!</p>
+</div>
+
+<div class="mainSections spotlightSection">
+<div class="spotlights spotlight1">
+<h2 class="spotlightSectionText spotlightTitle"><span id="companyOneName">Rangers' Tracking</span></h2>
+<div class="spotlightImageWrapper">
+<img id="companyOneImg" class="spotlightImage" src="images/trail.webp" alt="Rangers Trail" width="100" height="67">
+</div>
+<p class="spotlightSectionText"><span id="companyOneSlogan">A tracking service for Middle Earth.</span></p>
+<hr class="spotlightLine">
+<p class="spotlightSubText"><span id="companyOneWebsite">gettracking@rangerstracking.com</span> <br><span id="companyOnePhone">+999-9999-9999</span></p>
+</div>
+<div class="spotlights spotlight2">
+<h2 class="spotlightSectionText spotlightTitle"><span id="companyTwoName">Elvish Dining</span></h2>
+<div class="spotlightImageWrapper">
+<img id="companyTwoImg" class="spotlightImage" src="images/elvish_dining.webp" alt="Elvish Bread in Plate" width="100"
+height="67">
+</div>
+<p class="spotlightSectionText"><span id="companyTwoSlogan">"Catering to the largest of parties!"</span></p>
+<hr class="spotlightLine">
+<p class="spotlightSubText"><span id="companyTwoWebsite">delightful@elvishdining.com</span> <br><span id="companyTwoPhone">+999-9999-9999</span></p>
+</div>
+<div class="spotlights spotlight3">
+<h2 class="spotlightSectionText spotlightTitle"><span id="companyThreeName">Construct-a-Fort</span></h2>
+<div class="spotlightImageWrapper">
+<img id="companyThreeImg" class="spotlightImage" src="images/fort.webp" alt="Old Fort Under Construction" width="100"
+height="63">
+</div>
+<p class="spotlightSectionText"><span id="companyThreeSlogan">"Moria wasn't mined in a day."</span></p>
+<hr class="spotlightLine">
+<p class="spotlightSubText"><span id="companyThreeWebsite">theycallitamine@constructafort.com</span> <br><span id="companyThreePhone">+999-9999-9999</span></p>
+</div>
+</div>
+
+</main>
+
+<footer>
+<figure class="footerLogo">
+<img src="images/chambersLogo_medium.webp" alt="Chambers of Moria Logo" width="125" height="125">
+</figure>
+<div class="footerInfo">
+<div class="footerAddress">
+<h2 class="footerTitle">Moria Chamber of Commerce</h2>
+<p> 100 Mellon <br> Dimrill Dale, Misty Mountains</p>
+</div>
+<div class="footerContact">
+<p> chambersofmoria@moria.org <br> 062 908 2060 <br> <a class="mapLink" href="contact/">&#128205;Location</a></p>
+</div>
+</div>
+<div class="hrWrapper">
+<hr class="hrStyle">
+</div>
+<div class="footerCred">
+<div class="footerPiece">
+<p>&copy;<span id="currentYear"></span> Chambers of Moria</p>
+</div>
+<div class="footerDivider">
+<p>|</p>
+</div>
+<div class="footerPiece">
+<p><strong>T. Benjamin Fernelius</strong></p>
+</div>
+<div class="footerDivider">
+<p>|</p>
+</div>
+<div class="footerPiece">
+<p>WDD 230 Project</p>
+</div>
+<div class="footerDivider">
+<p>|</p>
+</div>
+<div class="footerPiece">
+<p>Last Modification: <span id="lastUpdate"></span></p>
+</div>
+</div>
+<div class="references">
+<a href="https://openweathermap.org/">Weather API - openweathermap.org</a>
+</div>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/windchill.js"></script>
+<script src="js/spotlight.js"></script>
+
 </body>
+
 </html>
