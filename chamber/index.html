@@ -1,196 +1,120 @@
+
 <!DOCTYPE html>
-<html lang="en-us">
-
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="WDD 230 Chamber of Commerce Site - Homepage">
-<title>Rexburg Chambers of Commerce Homepage</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&family=Open+Sans&family=PT+Serif&display=swap"
-rel="stylesheet">
-<link rel="shortcut icon" href="images/fav.ico">
-<link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="css/small.css">
-<link rel="stylesheet" href="css/medium.css">
-<link rel="stylesheet" href="css/large.css">
-<link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matthew Behymer">
+    <meta name="description" content="The home site for the for the Chamber of Commerce for Rocksberg.">
+
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    
+    <script defer src="js/main.js"></script> <!-- Using Defer will cause the javascript to run after the html has loaded-->
+    <script defer src="js/windchill.js"></script> <!-- Using Defer will cause the javascript to run after the html has loaded-->
+    
+    <title>Chamber Home</title>
 </head>
-
 <body>
+    <header>
+        <nav>
+            <button id="hamburger-btn">&#9776;</button>
+            <div id="logo-container">
+                <img id="logo-img" src="../lesson03/images/Rocksberg-logos_black-small.webp" alt="Website logo image Rocksberg">
+            </div>
+            <div id="social-container">
+                <div><a href="https://facebook.com"><img src="./images/facebook.png" alt="facebook icon"></a></div>
+                <div><a href="https://instagram.com"><img src="./images/instagram.png" alt="instagram icon"></a></div>
+            </div>
+            <div id="current-date">
+            </div>
+            <ul id="nav-link-container">
+                <li class="nav-link"><a href="#">Home</a></li>
+                <li class="nav-link"><a href="#">Places</a></li>
+                <li class="nav-link"><a href="#">About</a></li>
+                <li class="nav-link"><a href="#">More Info</a></li>
+            </ul>
+        </nav>
+        <div id="info-banner" class="warning box-container"><h2 class="warning heading">ANNOUNCEMENT</h2><p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p></div>
+    </header>
+    <main>
+        <div id="main-content-grid">
+            <section id="hero-container">
+                <!-- <img id="hero-img-small" src="images/rocks-small-text.jpg" alt="Hero image of rocks"> -->
+                <picture>
+                    <source srcset="images/rocks-large-text.jpg" media="(min-width:1050px)"> 
+                    <source srcset="images/rocks-medium-text.jpg" media="(min-width:650px)">
+                    <img id="hero-img" src="images/rocks-small-text.jpg" alt="Hero image of rocks">
+                </picture>
+                <!-- <img id="hero-img-medium" src="images/rocks-medium-text.jpg" alt="Hero image of rocks">
+                <img id="hero-img-large" src="images/rocks-large-text.jpg" alt="Hero image of rocks"> -->
+                <h1>Welcome to Rocksberg</h1>
+                <button>Join the Chamber</button>
 
-<header>
-<figure class="headerLogo">
-<a href="#"><img class="headerLogoAct" src="images/chamber.png"
-alt="Chambers of Moria Logo"></a>
-</figure>
-<a href="#">
-<div class="headerTitles">
-<h2 class="headerTitle">Rexburg Chamber of Commerce</h2>
-<h3 class="headerSubtitle">Chambers of Commerce</h3>
-</div>
-</a>
-<nav>
-<ul id="navLink">
-<li><a href="discover/">Discover</a></li>
-<li><a href="directory/">Directory</a></li>
-<li><a href="join/">Join</a></li>
-<li><a href="contact/">Contact</a></li>
-</ul>
-</nav>
-<div class="spacer1"></div>
-<figure class="headerIcon">
-<a href="https://facebook.com/"><img class="linkedIcon" src="images/facebook.png" alt="Facebook" width="25"
-height="25"></a>
-</figure>
-<figure class="headerIcon sideIcon">
-<a href="https://www.linkedin.com/"><img class="linkedIcon" src="images/linkedin.png" alt="Linkedin" width="25"
-height="25"></a>
-</figure>
-<div class="spacer2"></div>
-<button id="collapsingBtn" class="collapsingBtn"><span>&#9776;</span><span>X</span></button>
-<p class="headerDate"><span id="todayDate"></span></p>
-<div class="banner">
-<h2 class="bannerText">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</h2>
-</div>
-</header>
-
-<main class="mainGrid">
-<div class="mainSections heroSection">
-<div class="heroImageWrapper">
-<img class="heroImage"
-srcset="images/misty_mountains_450x.webp 450w,
-images/misty_mountains_700x.webp 700w, images/misty_mountains_1000x.webp 1000w, images/misty_mountains_1350x.webp 1350w"
-sizes="(max-width: 1120px) 100vw, 50vw" src="images/misty_mountains_1000x.webp"
-alt="The Misty Mountains">
-</div>
-<h1 class="heroText">Welcome to Chamber of Commerce</h1>
-<form class="heroButtonWrapper" action="join/">
-<button type="submit" value="Go to Join" class="heroButton"><strong>Join the Chamber</strong></button>
-</form>
-</div>
-
-<div class="mainSections eventSection">
-<h2 class="eventSectionText">Main Street</h2>
-<h3 class="eventSectionText">The Chamber</h3>
-<p class="eventSectionText">Bring pick in hand to experience a taste of the glory of the chamber, Friday at 8:00
-a.m. <span class="eventSubText">more info...</span></p>
-</div>
-
-<div class="mainSections weatherSection">
-<h2 class="weatherSectionText weatherTitle">Weather</h2>
-<div class="weatherImageWrapper">
-<img id="weatherImg" class="weatherImage" src="images/cloudy.png" alt="Partly Cloudy Icon"
-width="100" height="100">
-</div>
-<h3 class="weatherSectionText tempText"><span id="tempF">50</span>&#176;F</h3>
-<p id="weatherDescription" class="weatherSectionText weatherText"> Partly Cloudy</p>
-<hr class="weatherLine">
-<p class="weatherSectionText windSpeedText">Wind Speed: </p>
-<p class="weatherSectionText windSpeedValue"><span id="windSpeed">3.5</span> mph</p>
-<p class="weatherSectionText windChillText">Wind Chill: </p>
-<p class="weatherSectionText windChillValue"><span id="windChill">N/A</span></p>
-</div>
-
-<div class="mainSections newsSection">
-<h2 class="newsSectionText newsTitle">News Release</h2>
-<p class="newsSectionText newsText">Breaking News: Two Hobbit-like individuals were said to have been seen walking through
-the chamber of Commerce office last Tuesday.
-</p>
-</div>
-
-<div class="mainSections joinSection">
-<form class="joinButtonWrapper" action="join/">
-<button class="joinUsButton" type="submit" value="Go to Join"><strong>Join Us</strong></button>
-</form>
-<p class="joinSectionText">Discover how to join the chamber of commerce and how it will
-benefit your organization!</p>
-</div>
-
-<div class="mainSections spotlightSection">
-<div class="spotlights spotlight1">
-<h2 class="spotlightSectionText spotlightTitle"><span id="companyOneName">Make Your Business Count</span></h2>
-<div class="spotlightImageWrapper">
-<img id="companyOneImg" class="spotlightImage" src="images/trail.webp" alt="Rangers Trail" width="100" height="67">
-</div>
-<p class="spotlightSectionText"><span id="companyOneSlogan">Become A Member Now.</span></p>
-<hr class="spotlightLine">
-<p class="spotlightSubText"><span id="companyOneWebsite">register@chamber.com</span> <br><span id="companyOnePhone">+986-497-9922</span></p>
-</div>
-<div class="spotlights spotlight2">
-<h2 class="spotlightSectionText spotlightTitle"><span id="companyTwoName">The Chamber</span></h2>
-<div class="spotlightImageWrapper">
-<img id="companyTwoImg" class="spotlightImage" src="images/elvish_dining.webp" alt="Elvish Bread in Plate" width="100"
-height="67">
-</div>
-<p class="spotlightSectionText"><span id="companyTwoSlogan">"Helping The Local Businesses Grow"</span></p>
-<hr class="spotlightLine">
-<p class="spotlightSubText"><span id="companyTwoWebsite">ajarwee@chamber.com</span> <br><span id="companyTwoPhone">+9864979922</span></p>
-</div>
-<div class="spotlights spotlight3">
-<h2 class="spotlightSectionText spotlightTitle"><span id="companyThreeName">We Build Businesses</span></h2>
-<div class="spotlightImageWrapper">
-<img id="companyThreeImg" class="spotlightImage" src="images/fort.webp" alt="Old Fort Under Construction" width="100"
-height="63">
-</div>
-<p class="spotlightSectionText"><span id="companyThreeSlogan">"The Chamber wasn't just build in a day."</span></p>
-<hr class="spotlightLine">
-<p class="spotlightSubText"><span id="companyThreeWebsite">thechamber.com</span> <br><span id="companyThreePhone">+986-497-9922</span></p>
-</div>
-</div>
-
-</main>
-
-<footer>
-<figure class="footerLogo">
-<img src="images/chambersLogo_medium.webp" alt="Chambers of Commerce Logo" width="125" height="125">
-</figure>
-<div class="footerInfo">
-<div class="footerAddress">
-<h2 class="footerTitle">The Chamber of Commerce</h2>
-<p> 100 Main Street<br>Rexburg, Idaho</p>
-</div>
-<div class="footerContact">
-<p> chamberofcommerce@chamber.org <br> 062 908 2060 <br> <a class="mapLink" href="contact/">&#128205;Location</a></p>
-</div>
-</div>
-<div class="hrWrapper">
-<hr class="hrStyle">
-</div>
-<div class="footerCred">
-<div class="footerPiece">
-<p>&copy;<span id="currentYear"></span> Chambers of Commerce</p>
-</div>
-<div class="footerDivider">
-<p>|</p>
-</div>
-<div class="footerPiece">
-<p><strong>A. Lincoln Jarwee</strong></p>
-</div>
-<div class="footerDivider">
-<p>|</p>
-</div>
-<div class="footerPiece">
-<p>WDD 230 Project</p>
-</div>
-<div class="footerDivider">
-<p>|</p>
-</div>
-<div class="footerPiece">
-<p>Last Modification: <span id="lastUpdate"></span></p>
-</div>
-</div>
-<div class="references">
-<a href="https://openweathermap.org/">Weather API - openweathermap.org</a>
-</div>
-</footer>
-
-<script src="js/script.js"></script>
-<script src="js/windchill.js"></script>
-<script src="js/spotlight.js"></script>
-
+            </section><section id="event-container" class="box-container">
+                <h2 class="shadow-color heading">Event: Rock Climbing</h2>
+                <p class="box-description"><span class="bold">Where: </span>Route 52, Rock Park</p>
+                <p class="box-description">Join us to go rock climbing to get exercise and enjoy the outdoors. <a href="">More info.</a></p>
+            </section>
+            <section id="weather-container" class="box-container">
+                <h2 class="shadow-color heading">Weather</h2>
+                <p class="box-description"><span class="bold">Temperature High/Low: </span><span id="temp">10</span>&#8457;</p>
+                <p class="box-description">Sunny</p>
+                <p><span class="bold">Wind speed: </span><span id="wind-speed">20</span>mph</p>
+                <p><span class="bold">Wind Chill: </span><span id="wind-chill">N/A</span></p>
+            </section>
+            <section id="news-container" class="box-container">
+                <h2 class="shadow-color heading">News</h2>
+                <p class="box-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga laudantium aliquam impedit sequi itaque, id nam veniam explicabo blanditiis rerum minima repellat vel quae esse adipisci libero, recusandae nisi ab!</p>
+            </section>
+            <section id="join-container" class="box-container">
+                <h2 class="shadow-color heading">Join</h2>
+                <p class="box-description">Would you like to be a part of the community? Discover how you can be apart of Rocksberg and what you need to do to setup shop here!</p>
+                <a href="#" class="btn">Join Rocksberg!</a>
+            </section>
+            <section id="spotlight-container" class="box">
+                <div id="spotlight1" class="box-container">
+                    <h3 class="shadow-color heading">Rocky Camping Supplies</h3>
+                    <p class="box-description italic">"Camping even for the rockiest situation."</p>
+                    <div class="box-description">
+                        <p><span class="bold">Contact: </span>(xxx) xxx-xxxx.xxxx</p>
+                    </div>
+                </div>
+                <div id="spotlight2" class="box-container">
+                    <h3 class="shadow-color heading">Rocky Movers</h3>
+                    <p class="box-description italic">"We'll move you no matter the terrain!"</p>
+                    <div class="box-description">
+                        <p><span class="bold">Contact: </span>(xxx) xxx-xxxx.xxxx</p>
+                    </div>
+                </div>
+                <div id="spotlight3" class="box-container">
+                    <h3 class="shadow-color heading">Rocky Water Rafting</h3>
+                    <p class="box-description italic">"We'll give you the experience of a lifetime!"</p>
+                    <div class="box-description">
+                        <p><span class="bold">Contact: </span>(xxx) xxx-xxxx.xxxx</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-container">
+            <div id="footer-logo">
+                <div id="footer-logo-container">
+                    <img id="footer-logo-img" src="../lesson03/images/Rocksberg-logos_black-small.png" alt="Website logo image Rocksberg">
+                </div>
+            </div>
+            <div id="footer-content">
+                <p>&copy; Rexburg Chamber of Commerce</p>
+                <p><span id="year"></span> - Matthew Behymer - Idaho</p>
+                <p>WDD 230 Project</p>
+                <p>Last Modified: <span id="last-change"></span></p>
+                <p>Rocksberg Location: <a href="https://goo.gl/maps/wn699n6enLtiACYx8">&#128205;</a></p>
+            </div>
+        </div>
+    </footer>
 </body>
-
 </html>
