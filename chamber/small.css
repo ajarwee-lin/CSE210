@@ -1,0 +1,886 @@
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #484041;
+}
+
+h1 {
+    font-family: 'Mulish', sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-family: 'PT Serif', serif;
+    color: #484041;
+}
+
+li, ul, p, #companyOneWebsite, #companyOnePhone, #companyTwoWebsite, #companyTwoPhone, #companyThreeWebsite, #companyThreePhone {
+    font-size: 1.24em;
+}
+
+header {
+    display: flex;
+    background-color: #ADD8E6;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+header :nth-child(3) {
+    order: 1;
+}
+
+.headerLogo {
+    margin: 10px;
+}
+
+.headerLogoAct {
+    width: 50px;
+    height: 50px;
+}
+
+.headerTitles {
+    display: flex;
+    flex-wrap: wrap;
+    width: 150px;
+    text-decoration: none;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.headerTitle {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.headerSubtitle {
+    font-size: .8rem;
+    margin: 0;
+}
+
+.headerIcon {
+    margin: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.spacer1 {
+    flex: 1 1 auto;
+}
+
+.spacer2 {
+    flex: 1 1 auto;
+    max-width: 75px;
+}
+
+.linkedIcon {
+    border-radius: 15px;
+}
+
+.collapsingBtn {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+
+.headerDate {
+    width: 100%;
+    display: flex;
+    flex: 1 1 auto;
+    background-color:#434371;
+    color: #fff;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #434371;
+    margin: 0px auto;
+    box-shadow: 0 0 20px gray;
+    flex: 1;
+}
+
+nav ul#navLink {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0;
+    flex: 1 1 auto;
+}
+
+nav ul li {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+nav ul li a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    color: #fff
+}
+
+nav ul li a:hover {
+    background-color: #2D2D4D;
+    color: #fff;
+}
+
+nav ul {display: none;}
+nav ul.open {display: block; order: 1;}
+
+#collapsingBtn span:nth-child(1) {display: block;}
+#collapsingBtn span:nth-child(2) {display: none;}
+
+#collapsingBtn.open span:nth-child(1) {display: none;}
+#collapsingBtn.open span:nth-child(2) {display: block;}
+
+.banner {
+    background-color: #484041;
+    text-align: center;
+    box-shadow: 0px 0px 15px black;
+    margin: 5px;
+    width: 100%;
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.bannerText {
+    color: #fff;
+    font-size: 1rem;
+    flex: 1 1 auto;
+}
+
+.mainGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+}
+
+.mainSections {
+    grid-column: 1/2;
+    margin: 0px;
+    background-color: lightgray;
+    border: #2D2D4D;
+    border-style: solid;
+}
+
+.mainSections {
+    text-align: left;
+    flex: 1 1 auto;
+    height: 175px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.eventSectionText, .weatherSectionText, .newsSectionText, .joinSectionText, .spotlightSectionText {
+    color: #fff;
+}
+
+.heroSection {
+    position: relative;
+    display: flex;
+    padding: 0px;
+    width: auto;
+    height: auto;
+    max-height: 427px;
+    max-width: 698px;
+}
+
+.heroImageWrapper {
+    width: 100%;
+    overflow: hidden;
+    flex: 1 1 auto;
+}
+
+/* .heroImage {
+    width: 120%;
+    height: 100%;
+    flex: 1 1 auto;
+} */
+
+.heroImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.heroText {
+    position: absolute;
+    margin: 0px;
+    top: 20px;
+    left: 20px;
+    color: black;
+    text-shadow: 0 0 20px black;
+    font-size: 1.4rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.heroButtonWrapper {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    height: 60px;
+    margin: auto;
+    min-width: 200px;
+    flex: 1 1 auto;
+    max-width: 300px;
+}
+
+.heroButton {
+    flex: 1 1 auto;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(173, 216, 230, .8);
+    border-radius: 15px;
+}
+
+.eventSection {
+    width: auto;
+    height: auto;
+}
+
+.eventSection h2 {
+    color: #ADD8E6;
+    margin: 5px;
+    text-shadow: 0px 0px 3px #ADD8E6;
+}
+
+.eventSection h3 {
+    margin: 10px;
+}
+
+.eventSectionText {
+    text-align: center;
+}
+
+.eventSubText {
+    color:#ADD8E6
+}
+
+.weatherSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: auto;
+    height: auto;
+    justify-self: center;
+}
+
+.weatherTitle {
+    grid-column: 1/3;
+    text-align: center;
+    color: #ADD8E6;
+    margin: 5px;
+    text-shadow: 0px 0px 3px #ADD8E6;
+}
+
+.weatherImageWrapper {
+    text-align: center;
+}
+
+.weatherImage {
+    grid-column: 1/2;
+    margin: 0px;
+}
+
+.tempText {
+    grid-column: 2/3;
+    margin: 0px;
+    text-align: center;
+    align-self: center;
+    font-size: 2rem;
+}
+
+.weatherText {
+    grid-column: 1/3;;
+    margin: 5px;
+    text-align: center;
+}
+
+.weatherLine {
+    grid-column: 1/3;
+    width: 100%;
+    margin: 2px;
+}
+
+.windSpeedText {
+    grid-column: 1/2;
+    margin: 3px;
+    text-align: center;
+    font-size: .8rem;
+}
+
+.windSpeedValue {
+    grid-column: 2/3;
+    margin: 0px;
+    text-align: center;
+    font-size: .8rem;
+}
+
+.windChillText {
+    grid-column: 1/2;
+    margin: 3px;
+    text-align: center;
+    font-size: .8rem;
+}
+
+.windChillValue {
+    grid-column: 2/3;
+    margin: 0px;
+    text-align: center;
+    font-size: .8rem;
+}
+
+.joinSection {
+    display: none;
+}
+
+.newsSection {
+    width: auto;
+    height: auto;
+}
+
+.newsTitle {
+    color: #ADD8E6;
+    margin: 5px;
+    text-shadow: 0px 0px 3px #ADD8E6;
+    text-align: center;
+}
+
+.newsText {
+    text-align: center;
+    margin: 0px;
+    padding: 25px 0px;
+}
+
+.spotlightSection {
+    height: auto;
+}
+
+.eventSection, .weatherSection, .newsSection, .joinSection, .spotlightSection {
+    background-color: #434371;
+}
+
+.spotlights {
+    border: #2D2D4D;
+    border-style: solid;
+    margin: 0px;
+    box-shadow: 0px 0px 20px #2D2D4D;
+    flex: 1 1 auto;
+    min-width: 255px;
+}
+
+.spotlight3 {
+    display: none;
+}
+
+.spotlightTitle {
+    color: #ADD8E6;
+    margin: 5px;
+    margin-bottom: 10px;
+    text-shadow: 0px 0px 3px #ADD8E6;
+    text-align: center;
+}
+
+.spotlightImageWrapper {
+    text-align: center;
+}
+
+.spotlightImage {
+    margin: 0px;
+}
+
+.spotlightSectionText {
+    margin: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.spotlightLine {
+    margin: 2px;
+    margin-top: 5px;
+    flex: 1 1 auto;
+}
+
+.spotlightSubText {
+    color: #fff;
+    margin: 3px;
+    padding: 5px;
+    text-align: center;
+    font-size: .8rem;
+}
+
+footer {
+    background-color: #ADD8E6;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footerTitle {
+    font-size: 1.3rem;
+}
+
+.hrStyle {
+    height: 1px;
+    background-color: #484041;
+    border: none;
+    display: flex;
+    width: auto;
+    margin: 10px 20px 0 20px;
+}
+
+.footerCred {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.footerDivider {
+    display:none;
+}
+
+.footerContact {
+    line-height: 1.5rem;
+}
+
+.mapLink {
+    text-decoration: none;
+    color:#484041;
+}
+
+.references {
+    display: flex;
+    text-align: center;
+    margin: auto;
+    gap: 50px;
+    padding: 10px;
+}
+
+/* CSS for Discover Page */
+
+img[data-src] {
+    filter: blur(0.2em);
+}
+
+img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+
+.discoverMainGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    justify-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.discoverMainSection {
+    border: 2px solid #484041;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    background-color: #434371;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.discoverSectionHeading {
+    text-align: center;
+    color: #ADD8E6;
+    margin: 5px;
+    text-shadow: 0px 0px 3px #ADD8E6;
+}
+
+.discoverSectionPicture {
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin: 15px;
+}
+
+.discoverSectionImg {
+    max-width: 100%;
+    height: auto;
+}
+
+.demographicsPicture {
+    background-color: #fff;
+}
+
+.demographicsHeading {
+    text-align: center;
+    color: #ADD8E6;
+    margin: 5px;
+}
+
+.demographicsList {
+    color: #fff;
+    list-style: none;
+    text-align: center;
+    padding: 5px;
+}
+
+.locationFloat {
+    text-align: center;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.locationPicture {
+    box-shadow: none;
+    max-width: 270px;
+    margin: 10px;
+    width: 100%;
+    overflow: hidden;
+    flex: 1 1 auto;
+}
+
+.locationImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.economicSection {
+    align-items: center;
+}
+
+.economicPicture {
+    max-width: 800px;
+}
+
+.qualitySection {
+    align-items: center;
+}
+.qualityPicture {
+    max-width: 600px;
+    margin: 20px;
+}
+
+.housingSection {
+    align-items: center;
+}
+
+.housingPicture {
+    max-width: 600px;
+}
+
+.healthSection {
+    align-items: center;
+}
+
+.healthPicture {
+    max-width: 640px;
+}
+
+.discoverSectionText {
+    text-align: center;
+    padding: 1rem;
+    color: #fff;
+    margin: 10px;
+}
+
+.pageVisitSection {
+    background-color: #484041;
+    max-width: 100%;
+    min-width: 80%;
+}
+
+/* CSS for Join Page */
+
+.joinMainGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.joinHeading {
+    text-align: center;
+}
+
+form fieldset{
+    border: 2px solid #434371;
+    border-radius: 5px;
+}
+
+fieldset:first-child {
+    margin-bottom: 10px;
+}
+
+fieldset:nth-child(2) {
+    margin-top: 10px;
+}
+
+label, legend{
+    font-family: 'Open Sans', sans-serif;
+}
+
+legend {
+    font-weight: bold;
+    color: #484041;
+}
+
+form label,
+form input {
+    display: block;
+    width: 100%;
+}
+
+form {
+    max-width: 320px;
+    margin: 10px auto;
+}
+
+form input {
+    margin-top: 2px;
+    margin-bottom: 1em;
+    /* size for small view */
+    padding: .75rem;
+    border-radius: 10px;
+}
+
+label input {
+    display: inline;
+    width: auto;
+    margin: 0;
+}
+
+form label.required::after {
+    content: " *";
+    color: red;
+}
+
+form input:required {
+    border-left: 4px solid red;
+}
+
+form input:required:valid {
+    border-left: 4px solid green;
+}
+
+.businessDescription {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.membershipLabel {
+    margin-bottom: 5px;
+}
+
+.radioMember {
+    margin: 5px 0;
+}
+
+.required {
+    content: " *";
+}
+
+.joinSubmitBtn {
+    background-color: #ADD8E6;
+    margin-top: 16px;
+}
+
+.membershipDescription {
+    border: 2px solid #484041;
+    width: 320px;
+    margin: 10px auto;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.membershipHeader {
+    text-align: center;
+}
+
+.membershipSub {
+    text-align: center;
+}
+
+.bronze {
+    background-color: #cd7f32;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+.silver {
+    background-color: #C0C0C0;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+.gold {
+    background-color: #FFDF00;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+.thanksHeading {
+    text-align: center;
+}
+
+.thanksSection {
+    text-align: center;
+    /* border: 2px solid #484041; */
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    margin-bottom: 100px;
+}
+
+/* CSS for Directory page */
+
+.directoryHeading, .viewButtonWrapper {
+    text-align: center;
+}
+
+.viewButtons {
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.businessDirectoryCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    margin: 10px;
+}
+
+.cardSection {
+    text-align: center;
+    background-color: #ADD8E6;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #484041;
+}
+
+.cardSection img {
+    width: 200px;
+    height: auto;
+}
+
+.listDirectoryCards {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    margin: 10px;
+}
+
+.listCardSection {
+    background-color: #ADD8E6;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #484041;
+}
+
+.listCardSection img {
+    display: none;
+}
+
+.cardHeader {
+    margin: 15px;
+}
+
+.cardAddress {
+    margin: 10px;
+}
+
+.cardPhone {
+    margin: 5px;
+}
+
+.webLinkDiv {
+    margin: 10px;
+}
+
+/* CSS for Contact Page */
+
+.contactMainGrid {
+
+}
+
+.contactHeading {
+    text-align: center;
+}
+
+.contactPersonSection {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+}
+
+.contactPersonSection h2 {
+    text-align: center;
+}
+
+.randomPerson1 {
+    text-align: center;
+    margin: auto;
+    max-width: 400px;
+    height: auto;
+}
+
+.randomPerson1 img {
+    box-shadow: 5px 5px 10px black;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.randomPerson1 p {
+    font-weight: bold;
+}
+
+.randomPerson2 {
+    text-align: center;
+    margin: auto;
+    max-width: 400px;
+    height: auto;
+}
+
+.randomPerson2 img {
+    box-shadow: 5px 5px 10px black;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.randomPerson2 p {
+    font-weight: bold;
+}
+
+.contactContactInfo {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.contactContactInfo h3 {
+    margin: 10px 0;
+}
+
+.contactContactInfo p {
+    margin: 5px 0;
+}
