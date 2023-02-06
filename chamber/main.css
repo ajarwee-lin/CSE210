@@ -278,3 +278,10 @@ picture img {
     box-shadow: 5px 5px 10px #33333388;
     text-align: center;
 }
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    
+}
