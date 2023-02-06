@@ -1,174 +1,100 @@
-@media only screen and (min-width: 1120px) {
-    header :nth-child(3) {
-        order: 0;
+@media screen and (min-width: 1050px) {
+    #hamburger-btn {
+        display: none;
     }
-
     nav {
-        flex-direction: row;
-        justify-content: center;
-        flex: 1 1 auto;
-        margin: 0 20px;
-        height: 50px;
-    }
-
-    nav ul#navLink {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-
-    nav ul li {
-        flex: 1 1 auto;
-        padding: 0;
-    }
-
-    .spacer1{
-        display: none;
-    }
-
-    .sideIcon {
-        margin-right: 30px;
-    }
-
-    .collapsingBtn {
-        display: none;
-    }
-
-    .spacer2 {
-        display: none;
-    }
-
-    .mainGrid {
-        grid-template-columns: 1fr 3fr 1fr;
-    }
-
-    .heroSection {
-        grid-column: 2 / 3;
-        grid-row: 1 / 3;
-        order: -5;
-        height: auto;
-        max-height: none;
-        max-width: none;
-    }
-
-    .heroText {
-        position: absolute;
-        margin: 0px;
-        top: 20px;
-        left: 20px;
+        display: grid;
+        grid-template-columns: 1fr 6fr;
+        grid-template-rows: 5fr 4fr;
+        justify-items: center;
+        /* gap: 20px; */
     }
     
-    .heroButtonWrapper {
-        position: absolute;
-        bottom: 40px;
-        right: 30px;
-        height: 60px;
-        margin: auto;
-        width: 300px;
-    }
-    
-    .heroButton {
-        flex: 1 1 auto;
+    #nav-link-container {
         width: 100%;
-        height: 100%;
-        background-color: #ADD8E6;
-        border-radius: 15px;
-    }
-
-    .heroButton:hover {
-        box-shadow: 0 0 10px black;
-    }
-
-    .newsSection {
-        grid-column: 2 / 3;
-        order: -1;
-    }
-
-    .eventSection {
-        grid-column: 1 / 2;
-        order: -6;
-    }
-
-    p.eventSectionText {
-        font-size: .95rem;
-    }
-
-    .weatherSection {
-        grid-column: 1 / 2;
-        order: -3;
-        height: auto;
-        width: auto;
-    }
-
-    .joinSection {
-        display: block;
-        grid-column: 1 / 2;
-        order: -2;
-    }
-
-    .joinButtonWrapper {
-        padding: 5px 0px;
-    }
-
-    .joinSectionText {
-        margin: 5px;
-        padding: 10px;
-    }
-
-    .spotlightSection {
+        background-color: #333333;
         display: flex;
-        grid-column: 3 / 4;
-        grid-row: 1 / 4;
-        order: -4;
+        flex-direction: row;
+        justify-content: space-evenly;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        align-items: center;
+        /* align-self: center; */
+        /* padding: 0 10px; */
+
+    }
+    .nav-link {
+        display: block;
+        width: 100%;
+        margin: 0 5px;
+        padding: 5px;
+        border: none;
+    }
+    
+    .nav-link a {
+        border-radius: 5px;
+        border: 5px solid #333333
+    }
+    .nav-link a:hover {
+        background: #333333;
+        color: #ffffff;
+        border-radius: 5px;
+        border: 5px solid #a1e1d5
+    }
+
+    #social-container {
+        display: flex;
+        align-self: center;
+        gap: 20px;
+    }
+
+    #main-content-grid {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        align-items: stretch;
+    }
+
+    #hero-container {
+        grid-column: 2/3;
+        grid-row: 1/3;
+        /* background-image: url("images/rocks-large-text.jpg"); */
+    }
+    
+    picture img {
+        height: 625px;
+    }
+    
+
+    #news-container {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    #spotlight-container {
         flex-direction: column;
-        padding: 5px;
+        grid-column: 3/4;
+        grid-row: 1/4;
+        justify-content: space-around;
+        gap: 20px;
     }
-
-    .spotlight1{
-        margin: 5px;
-        margin-bottom: 0;
+    #spotlight-container div{
+        width: inherit;
     }
-    .spotlight2 {
-        margin: 5px 5px;
-    }
-
-    .spotlight3 {
-        display: block;
-        margin: 5px;
-        margin-top: 0;
-    }
-
-    .spotlightSubText {
-        padding: 5px;
-
-    }
-
-    .footerLogo {
-        margin-left: 150px;
-    }
-
-    .footerContact {
-        margin-right: 100px;
-    }
-
-    /* CSS for Discover Page */
-
-
-    .locationFloat {
+    #spotlight3 {
         display: block;
     }
 
-    .locationPicture {
-        float: right;
+    #join-container {
+        grid-column: 1/2;
+        grid-row: 3/4;
     }
-
-    .locationText {
-        text-align: left;
+    #event-container {
+        grid-column: 1/2;
+        grid-row: 1/2;
     }
-
-
-    /* CSS for Join page */
-
-
+    #weather-container {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
 }
