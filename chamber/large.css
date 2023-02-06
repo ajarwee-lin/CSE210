@@ -1,0 +1,174 @@
+@media only screen and (min-width: 1120px) {
+    header :nth-child(3) {
+        order: 0;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        flex: 1 1 auto;
+        margin: 0 20px;
+        height: 50px;
+    }
+
+    nav ul#navLink {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul li {
+        flex: 1 1 auto;
+        padding: 0;
+    }
+
+    .spacer1{
+        display: none;
+    }
+
+    .sideIcon {
+        margin-right: 30px;
+    }
+
+    .collapsingBtn {
+        display: none;
+    }
+
+    .spacer2 {
+        display: none;
+    }
+
+    .mainGrid {
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+
+    .heroSection {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+        order: -5;
+        height: auto;
+        max-height: none;
+        max-width: none;
+    }
+
+    .heroText {
+        position: absolute;
+        margin: 0px;
+        top: 20px;
+        left: 20px;
+    }
+    
+    .heroButtonWrapper {
+        position: absolute;
+        bottom: 40px;
+        right: 30px;
+        height: 60px;
+        margin: auto;
+        width: 300px;
+    }
+    
+    .heroButton {
+        flex: 1 1 auto;
+        width: 100%;
+        height: 100%;
+        background-color: #ADD8E6;
+        border-radius: 15px;
+    }
+
+    .heroButton:hover {
+        box-shadow: 0 0 10px black;
+    }
+
+    .newsSection {
+        grid-column: 2 / 3;
+        order: -1;
+    }
+
+    .eventSection {
+        grid-column: 1 / 2;
+        order: -6;
+    }
+
+    p.eventSectionText {
+        font-size: .95rem;
+    }
+
+    .weatherSection {
+        grid-column: 1 / 2;
+        order: -3;
+        height: auto;
+        width: auto;
+    }
+
+    .joinSection {
+        display: block;
+        grid-column: 1 / 2;
+        order: -2;
+    }
+
+    .joinButtonWrapper {
+        padding: 5px 0px;
+    }
+
+    .joinSectionText {
+        margin: 5px;
+        padding: 10px;
+    }
+
+    .spotlightSection {
+        display: flex;
+        grid-column: 3 / 4;
+        grid-row: 1 / 4;
+        order: -4;
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .spotlight1{
+        margin: 5px;
+        margin-bottom: 0;
+    }
+    .spotlight2 {
+        margin: 5px 5px;
+    }
+
+    .spotlight3 {
+        display: block;
+        margin: 5px;
+        margin-top: 0;
+    }
+
+    .spotlightSubText {
+        padding: 5px;
+
+    }
+
+    .footerLogo {
+        margin-left: 150px;
+    }
+
+    .footerContact {
+        margin-right: 100px;
+    }
+
+    /* CSS for Discover Page */
+
+
+    .locationFloat {
+        display: block;
+    }
+
+    .locationPicture {
+        float: right;
+    }
+
+    .locationText {
+        text-align: left;
+    }
+
+
+    /* CSS for Join page */
+
+
+}
