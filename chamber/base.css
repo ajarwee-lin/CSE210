@@ -528,14 +528,14 @@ picture img {
 #footer-container {
     display: flex;
     flex-direction: column;
-    background-color: #1D806C;
+    background-color: #4285F4;
     padding: 5px 0;
     align-items: center;
 }
 
 #footer-logo-container {
-    max-width: 300px;
-    background-color: #a1e1d5;
+    max-width: 200px;
+    background-color: #F4B400;
     padding: 5px;
     border-radius: 5px;
 }
@@ -543,7 +543,7 @@ picture img {
 #footer-content {
     /* width: 100%; */
     background-color: #FFFFFF;
-    padding: 15px;
+    padding: 10px;
     border-radius: 3px;
     box-shadow: 5px 5px 10px #33333388;
     text-align: center;
