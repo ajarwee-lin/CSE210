@@ -1,0 +1,160 @@
+{
+    "businesses": [
+        {
+            "name": "Likelihood",
+            "type": "Clothing & Accessories",
+            "location": {
+                "address1": "845 Main Street",
+                "city": "Seattle",
+                "state": "WA",
+                "zip_code": "10001"
+            },
+            "phone": "123-456-7890",
+            "website": "https://www.likelihood.us",
+            "logo": "images/directory/likelihood.jpg"
+        },
+        {
+            "name": "Chihuly Garden and Glass", 
+            "type": "Entertainment",
+            "location": {
+                "address1": "123 Pike Place",
+                "city": "Seattle",
+                "state": "WA",
+                "zip_code": "10001"
+            },
+            "phone": "123-456-7890",
+            "website": "https://www.chihulygardenandglass.com",
+            "logo": "images/directory/glass.webp"
+        },
+        {
+            "name": "Patagucci Clothing Store",
+            "type": "Clothing & Accessories",
+            "location": {
+                "address1": "55 Second Street",
+                "city": "Seattle",
+                "state": "WA",
+                "zip_code": "10001"
+            },
+            "phone": "123-456-7890",
+            "website": "http://www.patagucci.com",
+            "logo": "images/directory/patagucci.webp"
+        },
+        {
+            "name": "Mother Nature's Plants",
+            "type": "Shopping",
+            "location": {
+                "address1": "487 West Street",
+                "city": "Seattle",
+                "state": "WA",
+                "zip_code": "10001"
+            },
+            "phone": "123-456-7890",
+            "website": "http://www.motherearth.com",
+            "logo": "images/directory/plants.webp"
+        },
+        {
+            "name": "Pizzeria",
+            "type": "Food & Drink",
+            "location": {
+                "address1": "4 Market Street",
+                "city": "Seattle",
+                "state": "WA",
+                "zip_code": "10001"
+            },
+            "phone": "123-456-7890",
+            "website": "http://www.pizzeria.com",
+            "logo": "images/directory/pizza.webp"
+        },
+        {
+            "name": "Metropolitan Market",
+            "type": "Entertainment",
+            "location": {
+                "address1": "77 Sea Street",
+                "city": "Seattle",
+                "state": "WA",
+                "zip_code": "10001"
+            },
+            "phone": "123-456-7890",
+            "website": "https://metropolitan-market.com/",
+            "logo": "images/directory/grocery.webp"
+        },
+        {
+            "name": "Ellenos",
+            "type": "Food & Drink",
+            "location": {
+                "address1": "1500 Pike Place",
+                "city": "Seattle",
+                "state": "WA",
+                "zip_code": "98101"
+            },
+            "phone": "(206) 535-7562",
+            "website": "https://ellenos.com",
+            "logo": "images/directory/ellenos.webp"
+        },
+        {
+            "name": "Seattle Public Library",
+            "type": "Public Services",
+            "location": {
+                "address1": "1000 Fourth Avenue",
+                "city": "Seattle",
+                "state": "WA",
+                "zip_code": "98104"
+            },
+            "phone": "(206) 386-4636",
+            "website": "https://www.spl.org/",
+            "logo": "images/directory/library.webp"
+        },
+        {
+            "name": "The Space Needle",
+            "type": "Entertainment",
+            "location": {
+                "address1": "Space Needle Way",
+                "city": "Seattle",
+                "state": "WA",
+                "zip_code": "98101"
+            },
+            "phone": "(206) 905-2100",
+            "website": "https://www.spaceneedle.com/",
+            "logo": "images/directory/spaceneedle.webp"
+        },
+        {
+            "name": "Seattle Aquarium",
+            "type": "Entertainment",
+            "location": {
+                "address1": "1483 Alaskan Way",
+                "city": "Seattle",
+                "state": "WA",
+                "zip_code": "98101"
+            },
+            "phone": "(206) 386-4300",
+            "website": "https://www.seattleaquarium.org",
+            "logo": "images/directory/aqua.webp"
+        },
+        {
+            "name": "Amazon Spheres",
+            "type": "Entertainment",
+            "location": {
+                "address1": "2101 7th Avenue",
+                "city": "Seattle",
+                "state": "WA",
+                "zip_code": "98121"
+            },
+            "phone": "(123-456-7890)",
+            "website": "https://www.seattlespheres.com",
+            "logo": "images/directory/spheres.webp"
+        },
+        {
+            "name": "The Pink Door",
+            "type": "Food & Drink",
+            "location": {
+                "address1": "1919 Post Alley",
+                "city": "Seattle",
+                "state": "WA",
+                "zip_code": "98101"
+            },
+            "phone": "(206) 443-3241",
+            "website": "https://www.thepinkdoor.net",
+            "logo": "images/directory/pinkdoor.webp"
+        }
+    ]
+}
