@@ -29,6 +29,11 @@ h1 {
 }
 
 h2 {
+    font-size: 5em;
+    text-align: center;
+} 
+
+h2 {
     font-weight: 900;
     line-height: .9em;
 }
