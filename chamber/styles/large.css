@@ -264,27 +264,27 @@
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 1fr);
 }
-#dire1 {
+#dir1 {
     grid-column: 1/2;
     grid-row: 1/2;
 }
-#dire2 {
+#dir2 {
     grid-column: 2/3;
     grid-row: 1/2;
 }
-#dire3 {
+#dir3 {
     grid-column: 3/4;
     grid-row: 1/2;
 }
-#dire4 {
+#dir4 {
     grid-column: 4/5;
     grid-row: 1/2;
 }
-#dire5 {
+#dir5 {
     grid-column: 1/2;
     grid-row: 2/3;
 }
-#dire6 {
+#dir6 {
     grid-column: 2/3;
     grid-row: 2/3;
 }
