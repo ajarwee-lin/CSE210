@@ -1,64 +1,50 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="tables.css">
-    <script defer src="tables.js"></script>
-    <title>Tables</title>
+    <title>Table Practice</title>
+    <link href="table.css" rel="stylesheet">
 </head>
-
 <body>
     <table>
+        <caption>Table 1: Account Feature Comparison</caption>
         <thead>
             <tr>
-                <th colspan="3">ACME Wildwest</th>
+                <th colspan='4'>ACME Wilde West Services</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>Basic</th>
+                <th>Premium</th>
+                <th>Deluxe</th>
             </tr>
         </thead>
+
         <tbody>
             <tr>
-                <th scope="col">Period</th>
-                <th scope="col">Sales</th>
-                <th scope="col">Sales Goal</th>
+                <td>Feature 1</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
             </tr>
             <tr>
-                <th scope="row">August</th>
-                <td>$3,590</td>
-                <td>$4,000</td>
+                <td>Feature 2</td>
+                <td>❌</td>
+                <td>✔</td>
+                <td>✔</td>
             </tr>
             <tr>
-                <th scope="row">September</th>
-                <td>$4,420</td>
-                <td>$5,000</td>
+                <td>Feature 3</td>
+                <td>❌</td>
+                <td>❌</td>
+                <td>✔</td>
             </tr>
-            <tr>
-                <th scope="row">October</th>
-                <td>$4,870</td>
-                <td>$5,000</td>
-            </tr>
-            <tr>
-                <th scope="row">November</th>
-                <td>$8,610</td>
-                <td id="novGoal">$7,500</td>
-            </tr>
-            <tr>
-                <th scope="row" id="blackFriday">Black Friday</th>
-                <td colspan="2">$3,200</td>
-            </tr>
-            <tr>
-                <th scope="row">December</th>
-                <td>$6,820</td>
-                <td>$7,500</td>
-            </tr>
+
+
         </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="3">Compiled 11.03.2023 by A Jarwee</td>
-            </tr>
-        </tfoot>
     </table>
 </body>
-
 </html>
