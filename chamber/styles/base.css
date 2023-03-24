@@ -98,9 +98,9 @@ nav a:hover {
 
 .responsive  li{
     display: block;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-around; */
     margin-right: 40px;
 }
 
