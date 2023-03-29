@@ -1,0 +1,8 @@
+* Create a shared.css which contains all the styles
+which are shared by every webpage
+* Create separate css files for each individual webpage
+
+Things which each page in the the website share in common
+* footer
+* headers
+* fonts
