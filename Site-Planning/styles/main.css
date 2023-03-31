@@ -15,14 +15,14 @@ a {
 }
 
 a:hover {
-    color: #ccd5ae;
+    color: #ffcad4;
 }
 
 header, footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
-    background-color: #a2d2ff;
+    background-color: #8ecae6;
 }
 
 #logo-container {
