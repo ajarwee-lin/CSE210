@@ -1,0 +1,97 @@
+@media screen and (min-width: 1280px) {
+
+    /*h1, h2, h3 {
+        font-family: 'Courgette', cursive;
+    }
+
+    nav h3 {
+        color: #FFD23F;
+    }
+    
+    nav img {
+        width: 100px;
+    }*/
+
+    
+
+
+    nav {
+        background-color: #2B2B2B;
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+
+    
+
+    nav a {
+        margin: 20px;
+        padding: 20px;
+        background-color: #FFD23F;
+        align-self: center;
+        color: black;
+        text-decoration: none;
+        font-family: 'Courgette', cursive;
+        border-radius: 20px;
+        
+        
+        
+        
+    }
+
+    #right {
+        display: flex;
+    }
+
+    .responsive #right {
+        display: flex;
+    }
+
+    /*#right {
+        align-self: center;
+    
+
+    #left {
+        display: flex;
+        
+    }
+
+    #left h3 {
+        align-self: center;
+    }
+
+    main img {
+        width: 100%;
+    }
+
+    #hero {
+        position: relative;
+        
+    }
+
+    #hero-mess {
+        position: absolute;
+        top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        background: rgba(255, 204, 51, 0.3)
+        
+        
+    }*/
+
+    .hamButton {
+        display: none;
+    }
+
+    #about-main{
+        background-color: #FFD23F;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    
+
+}
