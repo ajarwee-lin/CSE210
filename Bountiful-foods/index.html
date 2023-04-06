@@ -1,75 +1,665 @@
 <!DOCTYPE html>
 <html lang="en">
+ 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bountiful Foods</title>
-    <link rel="stylesheet" href="styles/main.css">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <title>HTML Project</title>
 </head>
+ 
 <body>
-    <header>
-        <a id="logo-container" href="index.html"><img src="images/logo.png" alt="Logo" id="logo"></a>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="fresh.html">Fresh</a>
-            <a href="about.html">About Us</a>
-            
-        </nav>
-        <div id="socials">
-            <a href="https://www.facebook.com/"><img src="images/facebook-logo.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com/"><img src="images/instagram-logo.png" alt="Instagram"></a>
-            <a href="https://www.linkedin.com/"><img src="images/linkedin-logo.png" alt="LinkedIn"></a>
-        </div>
-        <a id="hamburger" href="#">&#8801;</a>
-        <a id="close" href="#">&#10005;</a>
-    </header>
-    <main>
+    <!--Header(start)-->
+    <table id="header" border="0" width="100%"
+        cellpadding="0" cellspacing="0" bgcolor="#E8E8E8">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15"
+                    cellspacing="0" width="90%" align="center">
+                    <tr>
+                        <td>
+                              
+ 
+                        </td>
+ 
+                        <td>
+                            <font face="Comic sans MS" size="6">
+                                <b>Bountiful Foods</b>
+                            </font>
+                        </td>
+ 
+                        <td width="15%">
+                              
+                        </td>
+ 
+                        <td>
+                            <a href="#home" style="text-decoration:none">
+                                <font face="Verdana" size="5" color=plum>
+                                    Home
+                                </font>
+                            </a>
+                        </td>
+ 
+                        <td>
+                            |
+                        </td>
+ 
+                        <td>
+                            <a href="#about" style="text-decoration:none">
+                                <font face="Verdana" size="5" color=plum>
+                                    About
+                                </font>
+                            </a>
+                        </td>
+ 
+                        <td>
+                            |
+                        </td>
+ 
+                        <td>
+                            <a href="#projects" style="text-decoration:none">
+                                <font face="Verdana" size="5" color=plum>
+                                    Order
+                                </font>
+                            </a>
+                        </td>
+ 
+                        <td>
+                            |
+                        </td>
+ 
+                        <td>
+                            <a href="#achievements" style="text-decoration:none">
+                                <font face="Verdana" size="5" color=plum>
+                                    Testimonials
+                                </font>
+                            </a>
+                        </td>
+ 
+                        <td>
+                            |
+                        </td>
+ 
+                        <td>
+                            <a href="#contact" style="text-decoration:none">
+                                <font face="Verdana" size="5" color=plum>
+                                    Contact
+                                </font>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!--Header(end)-->
+ 
+    <!--Home(start)-->
+    <table id="home" border="1" width="100%"
+        cellpadding="20" cellspacing="0" bgcolor="plum">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15"
+                    cellspacing="0" width="90%" align="center">
+                    <tr>
+                        <td align="center" valign="middle">
+                            <h3>
+                                <font face="Times New Roman"
+                                    size="6" color="#ffffff">
+                                    Come Taste The yummy flavours!
+                                </font>
+                            </h3>
+ 
+                            <h2>
+                                <font face="Verdana" size="6"
+                                    color="#4CAF50">
+                                    <!-- Freelance Programmer -->
+                                </font>
+                            </h2>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!--Home(end)-->
+ 
+ 
+    <!--About(start)-->
+    <table id="about" border="0" width="100%"
+        cellpadding="0" cellspacing="0" bgcolor="gray">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15"
+                    cellspacing="0" width="80%" align="center">
+                    <tr>
+                        <td height="180" align="center"
+                            valign="middle" colspan="2">
+                            <font face="Verdana" size="7"
+                                color="#4CAF50">
+                                About Bountiful Foods
+                            </font>
+                            <hr color="#4CAF50" width="90">
+                        </td>
+                    </tr>
+ 
+                    <tr>
+                        <td width="40%">
+                            <img src="images/img.png" alt="image" width="100%">
+                        </td>
+ 
+                        <td width="60%">
+                            <font face="Verdana" size="4"
+                                color="white">
+                                Thanks for coming to Bountiful Foods.
+                                <hr color="gray">
+                                Bountiful Foods is an LA-based bakery serving up delicious
+                                sweet and savory treats with global perspective. Fan favorites
+                                include the fresh-made sandwitches, layer and cakes and pies. 
 
-        <section id="images">
-            <img id="hero-img-1" src="images/hero-1.jpg" alt="Fresh Fruit">
-            <img id="hero-img-2" src="images/hero-2.jpg" alt="Fresh Fruit">
-            <img id="hero-img-3" src="images/hero-3.jpg" alt="Fresh Fruit">
-            <img id="hero-img-4" src="images/hero-4.jpg" alt="Fresh Fruit">
-        </section>
-
-        <section id="weather">
-            <h2>Weather</h2>
-            <h3>Los Angeles, California</h3>
-            <img id="weather_icon" alt=""/>
-            <h3 id="temp"><span id='t'></span>°F</h3>
-            <p id='condition'></p>
-            <p>WindSpeed: <span id='ws'></span>mph</p>
-        </section>
-
-        <section id="information">
-            <h2>News around you!</h2>
-            <div id="news0">
-                <img src="" alt="News-img">
-                <h3>New's Tittle</h3>
-                <p>New's description</p>
-            <div id="news1">
-                <img src="" alt="News-img">
-                <h3>New's Tittle</h3>
-                <p>New's description</p>
-            </div>
-            <div id="news2">
-                <img src="" alt="News-img">
-                <h3>New's Tittle</h3>
-                <p>New's description</p>
-            </div>
-            </div>
-        </section>
-
-        <section id="your-drinks">
-
-        </section>
-        
-    </main>
-    <footer>
-        
-    </footer>
-    
-    <script src="scripts/main.js"></script>
+                                You can visit us at any time, our beach farmers' Market is open
+                                all days.
+                                <hr color="gray">
+ 
+                                We're proud of what we do in our communities. We're here because you're there as our value
+                                customer. We give back to the communities that empower us.
+                                <hr color="gray">
+ 
+                                At Bountiful, our bakers and chefs are people put their all in what they do
+                                because, they believed that, the best is here, and no where else. That is why
+                                We keep doing what we do for the last 57 years, around this great country. 
+ 
+                                Thanks again for reading this,
+                                because of people like you, Bountiful still exist and 
+                                we're here to always make you proud, We hope to see you again!
+                                
+                                <hr color="gray">
+                                
+                                <br>
+                                <b>Bountiful Foods & Restaurant.</b>
+                            </font>
+                        </td>
+                    </tr>
+                </table>
+                <hr color="pastel">
+                <hr color="pastel">
+                <hr color="pastel">
+            </td>
+        </tr>
+    </table>
+    <!--About(end)-->
+ 
+ 
+    <!--Projects(start)-->
+    <table id="Our Menu" border="0" width="100%"
+        cellpadding="0" cellspacing="0" bgcolor="#D3CEDF">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15"
+                    cellspacing="0" width="80%" align="center">
+                    <tr>
+                        <td height="180" align="center"
+                            valign="middle" colspan="2">
+                            <font face="Verdana" size="7"
+                                color="black">
+                                Our Menu
+                            </font>
+                            <hr color="black" width="90">
+                        </td>
+                    </tr>
+ 
+                    <tr>
+                        <td height="10">
+                            <font face="Times New Roman"
+                                size="5" color="black">
+                                <ul>
+                                    <li>
+                                        Coconut Cake
+                                        <a href="#" style="text-decoration:none">
+                                              ➲
+                                        </a>
+                                    </li>
+ 
+                                    <li>
+                                        <hr color="#D3CEDF">
+                                        Blackout Cake
+                                        <a href="#" style="text-decoration:none"
+                                            color="#D3CEDF">
+                                              ➲
+                                        </a>
+                                    </li>
+ 
+                                    <li>
+                                        <hr color="#D3CEDF">
+                                        Hummingbird Cake
+                                        <a href="#" style="text-decoration:none">
+                                              ➲
+                                        </a>
+                                    </li>
+ 
+                                    <li>
+                                        <hr color="#D3CEDF">
+                                        Caramelized Apple Galette
+                                        <a href="#" style="text-decoration:none">
+                                              ➲
+                                        </a>
+                                    </li>
+ 
+                                    <li>
+                                        <hr color="#D3CEDF">
+                                        Banana Cream
+                                        <a href="#" style="text-decoration:none">
+                                              ➲
+                                        </a>
+                                    </li>
+ 
+                                    <li>
+                                        <hr color="#D3CEDF">
+                                        Bourbon Pecan Pie
+                                        <a href="#" style="text-decoration:none">
+                                              ➲
+                                        </a>
+                                    </li>
+ 
+                                    <li>
+                                        <hr color="#D3CEDF">
+                                        Teriyaki Flank Steak
+                                        <a href="#" style="text-decoration:none">
+                                              ➲
+                                        </a>
+                                    </li>
+ 
+                                    <li>
+                                        <hr color="#D3CEDF">
+                                        California Cubano
+                                        <a href="#" style="text-decoration:none">
+                                              ➲
+                                        </a>
+                                    </li>
+ 
+                                    <li>
+                                        <hr color="#D3CEDF">
+                                        Bahn Mi
+                                        <a href="#" style="text-decoration:none">
+                                             ➲
+                                        </a>
+                                    </li>
+ 
+                                    <li>
+                                        <hr color="#D3CEDF">
+                                        Jambon Beurre
+                                        <a href="#" style="text-decoration:none">
+                                             ➲
+                                        </a>
+                                    </li>
+ 
+                                    <li>
+                                        <hr color="#D3CEDF">
+                                        Meat Ball
+                                        <a href="#" style="text-decoration:none">
+                                             ➲
+                                        </a>
+                                    </li>
+ 
+                                    <li>
+                                        <hr color="#D3CEDF">
+                                        African Special
+                                        <a href="#" style="text-decoration:none">
+                                             ➲
+                                        </a>
+                                    </li>
+ 
+                                    <li>
+                                        <hr color="#D3CEDF">
+                                        Palm Butter From Liberia, West Africa
+                                        <a href="#" style="text-decoration:none">
+                                             ➲ </a>
+                                    </li>
+ 
+                                    <li>
+                                        <hr color="#D3CEDF">
+                                        Liberian Cassava Leaf Soup
+                                        <a href="#" style=
+                                            "text-decoration:none">  ➲
+                                        </a>
+                                    </li>
+                                </ul>
+                                <hr color="#D3CEDF">
+                                <hr color="#D3CEDF">
+                                <hr color="#D3CEDF">
+                                <hr color="#D3CEDF">
+                            </font>
+                        </td>
+ 
+                        <td width="45%">
+                            <img src="images/image.png" alt="image" width="130%">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!--Projects(end)-->
+ 
+    <!--Achievement(start)-->
+    <table id="achievements" border="0" width="100%"
+        cellpadding="0" cellspacing="0" bgcolor="pastel">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15"
+                    cellspacing="0" width="80%" align="center">
+                    <tr>
+                        <td height="180" align="center" valign="middle">
+                            <font face="Verdana" size="7" color="#D3CEDF">
+                                Testimonials
+                                <hr color="#D3CEDF" width="100">
+                            </font>
+                        </td>
+                    </tr>
+ 
+                    <tr>
+                        <td>
+                            <font face="Verdana" size="4" color="white">
+                                <ul>
+                                    <li>
+                                        <b>Mia Dave.</b>
+                                        <ul>
+                                            <li>
+                                                Bountiful Foods is a gem at the Laguna Beach Farmers Market! 
+                                                Preparing a delicious bounty of sweet and savory foods for sale each 
+                                                Saturday, has been one of their long commitment.
+                                            </li>
+                                        </ul>
+                                    </li>
+ 
+                                    <li>
+                                        <hr color="peach">
+                                        <hr color="peach">
+                                        <hr color="peach">
+                                        <b>Diotay Musalanana.</b>
+                                        <ul>
+                                            <li>
+                                                I can't say enough wonderful things about Bountiful Foods. They are the best
+                                                And I love eating from their Restaurant almost everyday. 
+                                            </li>
+                                        </ul>
+                                    </li>
+ 
+                                    <li>
+                                        <hr color="gray">
+                                        <hr color="gray">
+                                        <hr color="gray">
+                                        <b>Juan Zurita.</b>
+                                        <ul>
+                                            <li>
+                                                Since I was a kid, my Mom and Dad took me to Bountiful Foods, Since then, I've love eating
+                                                delicious cakes and other foods stuff. Hope BYU-I students can start ordering their 
+                                                favorite wedding cakes and other things.
+                                            </li>
+                                            <hr color="gray">
+                                            <hr color="gray">
+                                            <hr color="gray">
+                                            <hr color="gray">
+                                            <hr color="gray">
+                                        </ul>
+                                    </li>
+ 
+                                </ul>
+ 
+                            </font>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!--Achievement(end)-->
+ 
+ 
+    <!--Contact(start)-->
+    <table id="contact" border="0" width="100%"
+        cellpadding="0" cellspacing="0" bgcolor="BDC7C9">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15"
+                    cellspacing="0" width="80%" align="center">
+                    <tr>
+                        <td height="180" align="center"
+                            valign="middle" colspan="2">
+                            <font face="Verdana" size="7"
+                                color="black">
+                                Contact
+                            </font>
+                            <hr color="gray" width="90">
+                        </td>
+                    </tr>
+ 
+                    <tr>
+                        <td align="center" valign="top">
+                            <table border="0" width="50%" cellpadding="15"
+                                cellspacing="0" align="center" bgcolor="gray">
+                                <tr>
+                                    <td width="30%">
+                                        <hr color="gray">
+                                        <font face="Verdana" size="4"
+                                            color="#BDC7C9">
+                                            Name
+                                        </font>
+                                    </td>
+                                    <td width="70%">
+                                        <font face="Verdana" size="4"
+                                            color="#EDF3B7">
+                                            <input type="text" size="40">
+                                        </font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="30%">
+                                        <font face="Verdana" size="4"
+                                            color="#BDC7C9">
+                                            Email
+                                        </font>
+                                    </td>
+                                    <td width="70%">
+                                        <font face="Verdana" size="4"
+                                            color="#BDC7C9">
+                                            <input type="email" size="40">
+                                        </font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="30%">
+                                        <font face="Verdana" size="4"
+                                            color="#BDC7C9">
+                                            Number
+                                        </font>
+                                    </td>
+                                    <td width="70%">
+                                        <font face="Verdana" size="4"
+                                            color="#BDC7C9">
+                                            <input type="number" size="12">
+                                        </font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="30%">
+                                        <font face="Verdana" size="4"
+                                            color="#BDC7C9">
+                                            Message
+                                        </font>
+                                    </td>
+                                    <td width="70%">
+                                        <font face="Verdana" size="4"
+                                            color="#BDC7C9">
+                                            <textarea rows="5"
+                                                cols="37">
+                                            </textarea>
+                                        </font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="30%">
+                                          
+                                    </td>
+                                    <td width="70%">
+                                        <button type="Submit">
+                                            <font face="Verdana"
+                                                size="4" color="gray">
+                                                <b>Submit</b>
+                                            </font>
+                                        </button>
+                                        <hr color="yellow">
+                                        <hr color="yellow">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+ 
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                              
+                              
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!--Contact(end)-->
+ 
+ 
+    <!--Footer1(start)-->
+    <table id="footer" border="0" width="100%"
+        cellpadding="0" cellspacing="0" bgcolor="#EDF3B7">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15"
+                    cellspacing="0" width="90%" align="center">
+                    <tr>
+                        <td width="13%" valign="top">
+                            <a href="https://www.facebook.com"><img src="images/facebook.webp" alt="Facebook" width="30">
+                            <a href="#" style="text-decoration:none">
+                        
+                            </a>
+                        </td>
+ 
+                        <td>
+                            |
+                        </td>
+ 
+                        <td width="13%" valign="top">
+                            <a href="https://www.YouTube.com"><img src="images/youtube.webp" alt="YouTube" width="30">
+                            <a href="#" style="text-decoration:none">
+                            
+                            </a>
+                        </td>
+ 
+                        <td>
+                            |
+                        </td>
+ 
+                        <td width="13%" valign="top">
+                            <a href="https://www.instagram.com"><img src="images/instagram.webp" alt="Instagram" width="30">
+                            <a href="#" style="text-decoration:none">
+                            
+                            </a>
+                        </td>
+ 
+                        <td>
+                            |
+                        </td>
+ 
+                        <td width="13%" valign="top">
+                            <a href="https://www.tiktok.com"><img src="images/twitter.webp" alt="Twitter" width="30">
+                            <a href="#" style="text-decoration:none">
+                            
+                            </a>
+                        </td>
+ 
+                        <td>
+                            |
+                        </td>
+ 
+                        <td width="13%" valign="top">
+                            <a href="https://www.twitter.com"><img src="images/tiktok.webp" alt="TikTok" width="30">
+                            <a href="#" style="text-decoration:none">
+                            
+                            </a>
+                        </td>
+ 
+                        <td>
+                            |
+                        </td>
+ 
+                        <td width="13%" valign="top">
+                            <a href="https://www.linkedin.com/feed"><img src="images/linkedin-logo.png" alt="LinkedIn" width="30">
+                            <a href="#" style="text-decoration:none">
+                            
+                            </a>
+                        </td>
+ 
+                        <td>
+                            |
+                        </td>
+ 
+                        <td width="13%" valign="top">
+                            <b>Email</b>
+                            <a href="#" style="text-decoration:none">
+                            
+                            </a>
+                        </td>
+ 
+                        <td>
+                            |
+                        </td>
+ 
+                        <td width="13%" valign="top">
+                            <b>Website</b>
+                            <a href="#" style="text-decoration:none">
+                            
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!--Footer1(end)-->
+ 
+ 
+    <!--Footer2(start)-->
+    <table id="footer" border="0" width="100%"
+        cellpadding="0" cellspacing="0" bgcolor="gray">
+        <tr>
+            <td>
+                <table border="0" cellpadding="15"
+                    cellspacing="0" width="90%" align="center">
+                    <tr>
+                        <td width="80%" valign="top">
+                            <font face="Verdana"
+                                color="#B5D5C5" size="5">
+                                ©Copyright 2023 by A Jarwee Lincoln.
+                                All rights reserved.
+                            </font>
+                        </td>
+ 
+                        <td width="10%">
+                            <font face="arial" color="yellow" size="5">
+                                <a href="#header" style="text-decoration:none">
+                                    <font face="Verdana" color="#B5D5C5" size="6">
+                                        <b>TOP ☝</b>
+                                    </font>
+                                </a>
+                            </font>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!--Footer2(end)-->
+ 
 </body>
+ 
 </html>
